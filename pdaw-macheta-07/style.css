@@ -10,10 +10,11 @@ html {
 
 footer {
     font-family: 'Inter', sans-serif;
-    font-size: 15px;
-    height: 328px;
     background-color: #1A1033;
+    color: #94A3B8;
+    padding: 60px 0 0 0;
 }
+
 .container {
     max-width: 960px;
     margin: 0 auto;
@@ -542,4 +543,254 @@ section {
     font-size: 15px;
     height: 140px;
     background-color: #7C3AED;
+}
+/* Общие заголовки секций */
+.section-title {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: #1A1033;
+    text-align: center;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+/* Секция: Галерея */
+.galerie {
+    margin-top: 80px;
+    font-family: 'Inter', sans-serif;
+}
+
+.galerie-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 36px;
+}
+
+.galerie-main-img img {
+    display: block;
+    width: 100%;
+    height: 424px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.galerie-side-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.galerie-side-grid > img {
+    display: block;
+    width: 100%;
+    height: 202px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.galerie-bottom-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.galerie-bottom-row img {
+    display: block;
+    width: 100%;
+    height: 202px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+/* Секция: Расписание (Orar) */
+.orarul {
+    margin-top: 90px;
+    font-family: 'Inter', sans-serif;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    margin-top: 36px;
+}
+
+.orar-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #1A1033;
+    border-radius: 16px;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+.orar-table th {
+    background-color: #1A1033;
+    color: #ffffff;
+    padding: 20px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.orar-table td {
+    padding: 14px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 14px;
+    color: #CBD5E1;
+}
+
+.orar-table tr:last-child td {
+    border-bottom: none;
+}
+
+.class-pill {
+    display: inline-block;
+    background-color: #EFE7FD;
+    color: #1A1033;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 13px;
+    width: 100%;
+    max-width: 120px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.call-to-action {
+    margin-top: 90px;
+    background-color: #7C3AED;
+    padding: 40px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.cta-text h3 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.cta-text p {
+    color: #EFE7FD;
+    font-size: 15px;
+}
+
+.cta-form {
+    display: flex;
+    gap: 12px;
+}
+
+.cta-form input {
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    width: 280px;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.cta-btn {
+    background-color: #DB2777;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.2s;
+}
+
+.cta-btn:hover {
+    background-color: #be185d;
+}
+
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 50px;
+}
+
+.footer-brand p {
+    margin-top: 14px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #94A3B8;
+    max-width: 300px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    transition: background-color 0.2s;
+}
+
+.social-icon:hover {
+    background-color: #7C3AED;
+}
+
+.footer-col h4 {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.footer-col ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-col ul li a,
+.footer-col ul li {
+    color: #94A3B8;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 24px 0;
+    text-align: center;
+    font-size: 13px;
+    color: #64748B;
 }
