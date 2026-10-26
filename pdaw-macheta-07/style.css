@@ -8,6 +8,12 @@ html {
     scroll-behavior: smooth;
 }
 
+footer {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    height: 328px;
+    background-color: #1A1033;
+}
 .container {
     max-width: 960px;
     margin: 0 auto;
@@ -135,16 +141,14 @@ ul {
     font-size: 14px;
     font-weight: 700;
 }
-.nav {
 
-} 
 section {
     scroll-margin-top: 76px;
 }
 .hero {
-font-family: 'Inter', sans-serif;
-height: 547px;
-background-color:#EFE7FD;
+    font-family: 'Inter', sans-serif;
+    height: 547px;
+    background-color:#EFE7FD;
 }
 .hero .container {
     height: 100%;
@@ -248,9 +252,24 @@ background-color:#EFE7FD;
     font-size: 15px;
     height: 700px;
 }
-.section {
-
+.povesti-de-pe-ringul {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    height: 514px;
 }
-.footer {
-
+.galerie {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    height: 560px;
+}
+.orarul {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    height: 562px;
+}
+.call-to-action {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    height: 140px;
+    background-color: #7C3AED;
 }
