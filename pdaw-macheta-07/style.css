@@ -48,11 +48,13 @@ ul {
     margin-top: 20px;
 }
 .header-logo {
+    position: sticky;
     display: flex;
     align-items: center;
     margin-top: -20px;
 }
 .header-nav {
+    position: sticky;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -91,7 +93,16 @@ font-family: 'Inter', sans-serif;
 
 height: 547px;
 background-color:#EFE7FD;
-
+}
+.why-ritmo {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    height: 504px;
+}
+.alege-stilul {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    height: 700px;
 }
 .section {
 
