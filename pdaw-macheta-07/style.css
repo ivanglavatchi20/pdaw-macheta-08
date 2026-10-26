@@ -11,6 +11,7 @@ html {
 .container {
     max-width: 960px;
     margin: 0 auto;
+    padding: 0 40px;
 }
 .contact-info {
     font-family: 'Inter', sans-serif;
@@ -41,7 +42,7 @@ ul {
     top: 0;
     z-index: 100;
     background-color: #ffffff;
-    padding: 0 20px;
+    box-shadow: 0 1px 0 #E2E8F0;
     text-align: left;
 }
 .header-main {
@@ -72,6 +73,12 @@ ul {
     font-size: 15px;
     font-weight: 400;
 }
+.header-nav a.active {
+    color: #1A1033;
+    font-weight: 700;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #7C3AED;
+}
 .header-nav ul {
     display: flex;
     align-items: center;
@@ -80,12 +87,44 @@ ul {
     margin: 0;
     text-align: center; 
 }
+.header-nav li:last-child {
+    margin-left: 75px;
+}
+.anunt {
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 6px 15px;
+    border-radius: 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #7C3AED;
+}
+.purple {
+    color: #7C3AED;
+}
+.buttons {
+    display: flex;
+    gap: 12px;
+}
 .button {
     display: inline-block;
     background-color: #7C3AED;
     color: #ffffff;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+.button-hollow {
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid #7C3AED;
+    color: #7C3AED;
+    padding: 10px 20px;
+    border-radius: 8px;
     text-decoration: none;
     font-family: 'Inter', sans-serif;
     font-size: 14px;
@@ -104,9 +143,100 @@ section {
 }
 .hero {
 font-family: 'Inter', sans-serif;
-
 height: 547px;
 background-color:#EFE7FD;
+}
+.hero .container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 390px;
+    align-items: center;
+}
+.hero h1 {
+    margin: 14px 0 26px;
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    color: #1A1033;
+    white-space: nowrap;
+}
+.hero-text {
+    max-width: 480px;
+    margin-bottom: 26px;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #475569;
+}
+.hero .button,
+.hero .button-hollow {
+    padding: 12px 26px;
+    font-size: 16px;
+}
+.stats {
+    display: flex;
+    gap: 35px;
+    margin-top: 32px;
+}
+.stats strong {
+    display: block;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #1A1033;
+}
+.stats span {
+    font-size: 13px;
+    color: #64748B;
+}
+.hero-image {
+    position: relative;
+    width: 390px;
+    height: 400px;
+}
+.hero-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+}
+.info-card {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 16px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(26, 16, 51, 0.12);
+}
+.info-card-top {
+    top: 30px;
+    right: -20px;
+}
+.info-card-bottom {
+    bottom: 37px;
+    left: -30px;
+}
+.info-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #EFE7FD;
+    font-size: 16px;
+}
+.info-card strong {
+    display: block;
+    font-size: 15px;
+    color: #1A1033;
+}
+.info-card span {
+    font-size: 13px;
+    color: #64748B;
 }
 .why-ritmo {
     font-family: 'Inter', sans-serif;
