@@ -1,5 +1,11 @@
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+html {
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -11,19 +17,16 @@
     font-size: 13px;
     color: #CBD5E1;
     background-color: #1A1033;
-    display: flex;
-    justify-content: space-around;
-    align-items: left;
-    height: 36px;       
+    height: 36px;
 }
 ul {
     list-style: none;
 }
 .menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    gap: 490px;
+    height: 36px;
 }
 .working-hours {
     color: #CBD5E1;
@@ -34,32 +37,33 @@ ul {
     justify-content: space-between;
 }
 .header {
-    display: flex;
     position: sticky;
     top: 0;
+    z-index: 100;
     background-color: #ffffff;
-    padding: 20px;
+    padding: 0 20px;
     text-align: left;
 }
 .header-main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    height: 76px;
 }
 .header-logo {
-    position: sticky;
     display: flex;
     align-items: center;
-    margin-top: -20px;
+}
+.header-logo img {
+    display: block;
+    height: 29px;
 }
 .header-nav {
-    position: sticky;
     text-align: center;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
-    height: 76px;
 }
 .header-nav a {
     text-decoration: none;
@@ -70,12 +74,14 @@ ul {
 }
 .header-nav ul {
     display: flex;
-    gap: 30px; /* Отступы между 5 пунктами меню */
+    align-items: center;
+    gap: 30px; 
     padding: 0;
     margin: 0;
     text-align: center; 
 }
 .button {
+    display: inline-block;
     background-color: #7C3AED;
     color: #ffffff;
     padding: 10px 20px;
@@ -85,8 +91,16 @@ ul {
     font-size: 14px;
     font-weight: 700;
 }
+.header-nav a.button {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+}
 .nav {
 
+} 
+section {
+    scroll-margin-top: 76px;
 }
 .hero {
 font-family: 'Inter', sans-serif;
