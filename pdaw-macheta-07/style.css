@@ -29,35 +29,73 @@ ul {
     color: #CBD5E1;
     background-color: #1A1033;
     display: flex;
-    
-    align-items: right;
+    align-items: center;
     margin-left: 40px;
+    justify-content: space-between;
 }
 .header {
+    display: flex;
     position: sticky;
     top: 0;
     background-color: #ffffff;
     padding: 20px;
-    text-align: space-between;
+    text-align: left;
+}
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
 }
 .header-logo {
     display: flex;
-    justify-content: left;
-    margin-left: 40px;
+    align-items: center;
+    margin-top: -20px;
 }
 .header-nav {
+    text-align: center;
     display: flex;
     justify-content: center;
-    align-items: space-around;
     gap: 20px;
     height: 76px;
 }
+.header-nav a {
+    text-decoration: none;
+    color: #475569;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.header-nav ul {
+    display: flex;
+    gap: 30px; /* Отступы между 5 пунктами меню */
+    padding: 0;
+    margin: 0;
+    text-align: center; 
+}
+.button {
+    background-color: #7C3AED;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
 .nav {
+
+}
+.hero {
+font-family: 'Inter', sans-serif;
+
+height: 547px;
+background-color:#EFE7FD;
 
 }
 .section {
 
 }
 .footer {
-    
+
 }
